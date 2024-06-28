@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人网页</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(45deg, #6a11cb, #2575fc);
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            animation: move 5s infinite;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+            50% {
+                transform: translate(100px, 100px);
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        h2 {
+            color: #6a11cb;
+            text-align: center;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #6a11cb;
+            margin: 10px auto;
+            border-radius: 3px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        li:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-info a {
+            color: #6a11cb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #2575fc;
+        }
+
+        .contact-info p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>个人网页</h1>
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>个人简介</h2>
+            <p>你好！我是一个前端开发者，热衷于创造优美和高效的用户界面。我对新技术充满热情，喜欢不断学习和挑战自我。</p>
+        </div>
+        <div class="section">
+            <h2>工作经历</h2>
+            <ul>
+                <li>
+                    <strong>公司名称</strong> - 职位（工作时间）
+                    <p>工作职责简要描述。</p>
+                </li>
+                <li>
+                    <strong>公司名称</strong> - 职位（工作时间）
+                    <p>工作职责简要描述。</p>
+                </li>
+                <!-- 添加更多工作经历 -->
+            </ul>
+        </div>
+        <div class="section">
+            <h2>教育背景</h2>
+            <ul>
+                <li>
+                    <strong>学校名称</strong> - 学位（毕业时间）
+                </li>
+                <li>
+                    <strong>学校名称</strong> - 学位（毕业时间）
+                </li>
+                <!-- 添加更多教育背景 -->
+            </ul>
+        </div>
+        <div class="section">
+            <h2>技能</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Vue</li>
+                <!-- 添加更多技能 -->
+            </ul>
+        </div>
+        <div class="section">
+            <h2>项目展示</h2>
+            <ul>
+                <li>
+                    <strong>项目名称</strong>
+                    <p>项目简要描述，包含技术栈和你的贡献。</p>
+                </li>
+                <li>
+                    <strong>项目名称</strong>
+                    <p>项目简要描述，包含技术栈和你的贡献。</p>
+                </li>
+                <!-- 添加更多项目 -->
+            </ul>
+        </div>
+        <div class="section contact-info">
+            <h2>联系方式</h2>
+            <p>电子邮件: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+            <p>电话号码: <a href="tel:+1234567890">+1234567890</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">yourprofile</a></p>
+            <p>GitHub: <a href="https://github.com/yourprofile" target="_blank">yourprofile</a></p>
+            <!-- 添加更多联系方式 -->
+        </div>
+    </div>
+</body>
+</html>
